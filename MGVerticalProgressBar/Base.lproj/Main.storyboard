@@ -23,10 +23,42 @@
                                     <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" translatesAutoresizingMaskIntoConstraints="NO" id="he0-zT-gmK" customClass="MGVerticalProgressBar" customModule="MGVerticalProgressBar" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="51" height="627"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="insetX">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="insetY">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="progress">
+                                                <real key="value" value="0.29999999999999999"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nzs-VB-yEI" customClass="MGVerticalProgressBar" customModule="MGVerticalProgressBar" customModuleProvider="target">
                                         <rect key="frame" x="101" y="0.0" width="50" height="627"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="insetX">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="insetY">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="progress">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                <real key="value" value="16"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="trackImage" value="trackImage"/>
+                                        </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bxP-DQ-88W" customClass="MGVerticalProgressBar" customModule="MGVerticalProgressBar" customModuleProvider="target">
                                         <rect key="frame" x="201" y="0.0" width="50" height="627"/>
@@ -51,8 +83,8 @@
                     </view>
                     <connections>
                         <outlet property="pBar1" destination="he0-zT-gmK" id="95C-Pu-raq"/>
+                        <outlet property="pBar2" destination="nzs-VB-yEI" id="MQG-ab-8PP"/>
                         <outlet property="pBar3" destination="bxP-DQ-88W" id="etF-r4-e5I"/>
-                        <outlet property="pbar2" destination="nzs-VB-yEI" id="QMU-Gs-Grs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -60,4 +92,7 @@
             <point key="canvasLocation" x="140" y="137.18140929535232"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="trackImage" width="20" height="316"/>
+    </resources>
 </document>
