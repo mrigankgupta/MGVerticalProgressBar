@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13156.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13156.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13137.5"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -13,43 +13,56 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MGVerticalProgressBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jRi-XW-WDr"/>
+                        <viewControllerLayoutGuide type="bottom" id="gBR-zC-Xs8"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="zv9-g5-gbn">
-                                <rect key="frame" x="62" y="20" width="251" height="627"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" insetsLayoutMarginsFromSafeArea="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="zv9-g5-gbn">
+                                <rect key="frame" x="42.5" y="20" width="290" height="627"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" translatesAutoresizingMaskIntoConstraints="NO" id="he0-zT-gmK" customClass="MGVerticalProgressBar" customModule="MGVerticalProgressBar" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="51" height="627"/>
+                                    <view contentMode="scaleToFill" ambiguous="YES" insetsLayoutMarginsFromSafeArea="YES" translatesAutoresizingMaskIntoConstraints="NO" id="he0-zT-gmK" customClass="MGVerticalProgressBar" customModule="MGVerticalProgressBar" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="90" height="627"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="Igr-qE-bdJ"/>
+                                        </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="insetX">
                                                 <real key="value" value="8"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="insetY">
-                                                <real key="value" value="3"/>
+                                                <real key="value" value="8"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="0.0"/>
+                                                <real key="value" value="8"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="progress">
                                                 <real key="value" value="0.29999999999999999"/>
                                             </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="trackColor">
+                                                <color key="value" red="1" green="0.3385978368" blue="0.22021845239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                <color key="value" red="1" green="0.93100431009999995" blue="0.29846613709999997" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nzs-VB-yEI" customClass="MGVerticalProgressBar" customModule="MGVerticalProgressBar" customModuleProvider="target">
-                                        <rect key="frame" x="101" y="0.0" width="50" height="627"/>
+                                    <view contentMode="scaleToFill" ambiguous="YES" insetsLayoutMarginsFromSafeArea="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nzs-VB-yEI" customClass="MGVerticalProgressBar" customModule="MGVerticalProgressBar" customModuleProvider="target">
+                                        <rect key="frame" x="100" y="0.0" width="90" height="627"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="insetX">
-                                                <real key="value" value="3"/>
+                                                <real key="value" value="5"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="insetY">
-                                                <real key="value" value="3"/>
+                                                <real key="value" value="5"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="5"/>
+                                                <real key="value" value="7"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="progress">
                                                 <real key="value" value="1"/>
@@ -58,28 +71,51 @@
                                                 <real key="value" value="16"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="image" keyPath="trackImage" value="trackImage"/>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="fillImage" value="barImage"/>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bxP-DQ-88W" customClass="MGVerticalProgressBar" customModule="MGVerticalProgressBar" customModuleProvider="target">
-                                        <rect key="frame" x="201" y="0.0" width="50" height="627"/>
+                                    <view contentMode="scaleToFill" ambiguous="YES" insetsLayoutMarginsFromSafeArea="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bxP-DQ-88W" customClass="MGVerticalProgressBar" customModule="MGVerticalProgressBar" customModuleProvider="target">
+                                        <rect key="frame" x="200" y="0.0" width="90" height="627"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="insetX">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="insetY">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="trackColor">
+                                                <color key="value" red="0.11155399659863946" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                <color key="value" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="fontColor">
+                                                <color key="value" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="nzs-VB-yEI" firstAttribute="leading" secondItem="zv9-g5-gbn" secondAttribute="leading" constant="101" id="G0u-hR-fjK"/>
-                                    <constraint firstItem="nzs-VB-yEI" firstAttribute="centerX" secondItem="zv9-g5-gbn" secondAttribute="centerX" id="v9V-3G-SjH"/>
+                                    <constraint firstItem="nzs-VB-yEI" firstAttribute="width" secondItem="bxP-DQ-88W" secondAttribute="width" id="iHa-PR-bf2"/>
+                                    <constraint firstItem="he0-zT-gmK" firstAttribute="width" secondItem="nzs-VB-yEI" secondAttribute="width" id="mPj-QX-sX6"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="zv9-g5-gbn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="3yJ-3c-obb"/>
-                            <constraint firstItem="zv9-g5-gbn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="62" id="cV4-kD-YGy"/>
+                            <constraint firstItem="zv9-g5-gbn" firstAttribute="top" secondItem="jRi-XW-WDr" secondAttribute="bottom" id="3yJ-3c-obb"/>
+                            <constraint firstItem="zv9-g5-gbn" firstAttribute="leading" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="100" id="cV4-kD-YGy"/>
                             <constraint firstItem="zv9-g5-gbn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dK4-T5-OBN"/>
                             <constraint firstItem="zv9-g5-gbn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="npg-Rf-BQu"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zv9-g5-gbn" secondAttribute="trailing" constant="62" id="yms-hE-TBv"/>
+                            <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="zv9-g5-gbn" secondAttribute="trailing" constant="100" id="yms-hE-TBv"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="pBar1" destination="he0-zT-gmK" id="95C-Pu-raq"/>
@@ -93,6 +129,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="trackImage" width="20" height="316"/>
+        <image name="barImage" width="20" height="200"/>
+        <image name="trackImage" width="25" height="205"/>
     </resources>
 </document>
