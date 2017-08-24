@@ -2,6 +2,10 @@
 MGProgressBar
 A custom Vertical Progress bar with Image and Color support via interface builder
 
+
+![Screenshot](https://github.com/mrigankgupta/MGVerticalProgressBar/blob/master/MGVerticalProgressBar/Assets.xcassets/screenshot.imageset/screenshot-1.png)
+
+
 # Usage
 * Add MGVerticalProgressBar file to your project 
 * Add a new UIView where you want the see your progress bar. Set its class to MGVerticalProgressBar from storyboard and set the properties in interface builder.
